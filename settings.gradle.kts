@@ -20,4 +20,8 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "frames-android"
-include(":app")
+include(":mobile")
+include(":tv")
+include(":core:data")
+include(":core:designsystem")
+include(":core:domain")
