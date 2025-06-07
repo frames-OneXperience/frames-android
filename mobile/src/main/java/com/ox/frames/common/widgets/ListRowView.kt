@@ -20,7 +20,7 @@ fun ListRowView(
     modifier: Modifier = Modifier
 ){
     Column(modifier = modifier,
-        verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        verticalArrangement = Arrangement.spacedBy(6.dp)) {
         Text(text = section.title)
 
         val cardType = when(section.cardType){

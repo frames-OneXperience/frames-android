@@ -10,7 +10,7 @@ object FakeCatalogData {
         return Collection( screenTitle = "Home", sections = listOf(
             Section(1,"Kannada Movies", cardType = "Movies", contents = listOf(
                 Content(id = 1,"Wednesday", posterUrl = "https://image.tmdb.org/t/p/original/yjmNvpKgAcMtFoWI4fpXSLWkQPP.jpg"),
-                Content(id = 1,"Wednesday", posterUrl = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg"),
+                Content(id = 1,"Wednesday", posterUrl = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg"),
                 Content(id = 1,"Wednesday", posterUrl = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yqsCU5XOP2mkbFamzAqbqntmfav.jpg"),
                 Content(id = 1,"Wednesday", posterUrl = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uX6FaNE86a4Xnf1mFFEryvjqB1D.jpg"),
                 Content(id = 1,"Wednesday", posterUrl = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/t48miSSfe7COqgbgMyRIyPVTBoM.jpg"),

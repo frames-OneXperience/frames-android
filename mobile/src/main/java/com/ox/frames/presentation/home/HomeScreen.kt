@@ -1,6 +1,7 @@
 package com.ox.frames.presentation.home
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -43,8 +44,11 @@ fun HomeScreen(
                         .fillMaxWidth()
                         .height(400.dp))
                 }
+
                 items(FakeCatalogData.getCatalog().sections){
-                    ListRowView(section = it)
+                    Box(modifier = Modifier.padding(16.dp,0.dp)) {
+                        ListRowView(section = it)
+                    }
                 }
             }
 

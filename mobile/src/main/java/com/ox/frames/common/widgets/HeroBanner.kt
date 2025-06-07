@@ -75,7 +75,7 @@ fun HeroBannerImage(modifier: Modifier = Modifier){
         Box(modifier = Modifier.weight(1f)) {
             Image(
                 modifier = Modifier.fillMaxSize(),
-                painter = rememberAsyncImagePainter(model = "https://static-gi.asianetnews.com/images/01j4cnq3baaxbvkhz2dbja1rqw/str-48.jpg" ),
+                painter = rememberAsyncImagePainter(model = "https://image.tmdb.org/t/p/original/hQYEA4Ty1RlxsToWMYLE2RzSc0N.jpg" ),
                 contentScale = ContentScale.Crop,
                 contentDescription = "",
             )
