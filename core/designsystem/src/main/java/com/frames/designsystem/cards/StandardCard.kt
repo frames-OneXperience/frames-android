@@ -30,24 +30,21 @@ fun StandardCard(
     cardType: CardType,
     modifier: Modifier = Modifier,
 ) {
-    Column {
-        Box(
-            modifier = modifier
-               .width(cardType.width.dp)
-               .clip(RoundedCornerShape(8.dp))
-               .aspectRatio(cardType.aspectRatio)
-               .background(Color.Gray)
-        ) {
-            if (content.posterUrl.isNotEmpty()) {
-                AsyncImage(
-                    model = ImageRequest.Builder(LocalContext.current)
-                        .data(content.posterUrl)
-                        .crossfade(true)
-                        .build(),
-                    contentScale = ContentScale.Crop,
-                    contentDescription = ""
-                )
-            }
+    Box(
+        modifier = modifier
+            .width(cardType.width.dp)
+            .clip(RoundedCornerShape(8.dp))
+            .aspectRatio(cardType.aspectRatio)
+            .background(Color.Gray)
+    ) {
+        if (content.posterUrl.isNotEmpty()) {
+            AsyncImage(model = ImageRequest.Builder(LocalContext.current)
+                    .data(content.posterUrl)
+                    .crossfade(true)
+                    .build(),
+                contentScale = ContentScale.Crop,
+                contentDescription = ""
+            )
         }
     }
 }
